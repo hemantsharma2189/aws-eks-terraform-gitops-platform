@@ -76,3 +76,11 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+
+variable "single_nat_gateway" {
+  description = "Use one NAT Gateway to reduce development cost. Disable for production multi-AZ resilience."
+  type        = bool
+  default     = true
+}
+
