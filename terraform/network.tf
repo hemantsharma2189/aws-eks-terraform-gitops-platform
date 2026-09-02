@@ -28,7 +28,7 @@ module "vpc" {
   create_flow_log_cloudwatch_iam_role  = true
   create_flow_log_cloudwatch_log_group = true
 
-  flow_log_max_aggregation_interval              = 60
+  flow_log_max_aggregation_interval               = 60
   flow_log_cloudwatch_log_group_retention_in_days = 30
 
   public_subnet_tags = {

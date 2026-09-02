@@ -20,9 +20,9 @@ module "eks" {
     "scheduler",
   ]
 
-  create_cloudwatch_log_group              = true
-  cloudwatch_log_group_retention_in_days   = 30
-  deletion_protection                      = var.environment == "prod"
+  create_cloudwatch_log_group            = true
+  cloudwatch_log_group_retention_in_days = 30
+  deletion_protection                    = var.environment == "prod"
 
   addons = {
     coredns = {
